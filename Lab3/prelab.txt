@@ -1,0 +1,25 @@
+Sened Haddad
+Thursday 2:15
+
+Client Side (sender)
+-Configure the address
+-Create UDP socket
+-Open file
+-Send data over:
+  ~Send file name on first transfer
+  ~Implement checksum
+  ~Send 10 bytes at a time after that
+  ~Receive ACK
+  ~If you don’t get correct ACK back, try again
+
+
+Server Side (Receiver)
+-Create socket
+-Bind the socket
+-Checksum
+-Receiving data
+  ~Make file if it’s the first transfer
+  ~Otherwise, just add to the file
+  ~Send ACK
+
+
